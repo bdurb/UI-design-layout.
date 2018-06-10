@@ -174,6 +174,7 @@ body {
   height: 250px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .footer-container h1 {
   font-size: 2rem;
@@ -182,6 +183,9 @@ body {
 .footer-container p {
   font-size: 1.2rem;
   line-height: 2.6rem;
+}
+input {
+  width: 275px;
 }
 .jumbo-home {
   width: 100%;
