@@ -7,3 +7,15 @@ const showNav = () => {
 };
 const nav = document.querySelector(".navigation");
 window.addEventListener("scroll", showNav);
+
+let overlay = document.querySelector('.overlay');
+let menuButton = document.querySelector('.hamburger');
+let closeButton = document.querySelector('.close-btn');
+
+menuButton.addEventListener('click', function() {
+  overlay.style.display = 'block';
+});
+
+closeButton.addEventListener('click', function() {
+  overlay.style.display = 'none';
+});
