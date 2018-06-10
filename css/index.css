@@ -153,6 +153,8 @@ body {
   position: fixed;
   height: 50px;
   width: 100%;
+  opacity: .95;
+  z-index: 20;
 }
 .navigation h1 {
   color: #FFFFFF;
