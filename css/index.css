@@ -150,7 +150,18 @@ body {
 }
 .navigation {
   position: fixed;
+  height: 50px;
+  width: 100%;
+}
+.navigation h1 {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+}
+.navigation .container {
   display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 .jumbo-home {
   width: 100%;
