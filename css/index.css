@@ -256,7 +256,7 @@ input {
 @media (max-width: 400px) {
   .row1 {
     flex-direction: column-reverse;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
 }
 .row1 h1 {
@@ -272,6 +272,11 @@ input {
   color: black;
   border: 1px solid black;
   font-size: 1.6rem;
+}
+@media (max-width: 400px) {
+  .row1 .buttons {
+    width: 100%;
+  }
 }
 .col-md-6 {
   padding-left: 0;
