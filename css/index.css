@@ -334,10 +334,20 @@ input {
 .services-text {
   margin: 50px 0;
 }
+.tabs {
+  width: 100%;
+}
+.tabs .tabs-item {
+  display: none;
+}
+.tabs .tabs-item-selected {
+  display: flex;
+}
 .tabs-link {
+  padding: 0;
   display: flex;
   height: 50px;
-  width: 80%;
+  width: 100px;
   background: white;
   border: 1px solid #D8D8D8;
   align-items: center;
@@ -348,4 +358,9 @@ input {
 .tabs-link:hover {
   background: #5E9FB9;
   cursor: pointer;
+}
+.tabs-link-selected {
+  z-index: 2;
+  background-color: #5E9FB9;
+  color: #FFFFFF;
 }
