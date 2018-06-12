@@ -291,6 +291,19 @@ input {
 .villas-image {
   position: relative;
 }
+@media (max-width: 400px) {
+  .desktop-villas {
+    display: none;
+  }
+}
+.mobile-villas {
+  display: none;
+}
+@media (max-width: 400px) {
+  .mobile-villas {
+    display: block;
+  }
+}
 .villas {
   display: flex;
   position: absolute;

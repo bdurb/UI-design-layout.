@@ -59,6 +59,20 @@
   position: relative;
 }
 
+.desktop-villas {
+  @media @phone {
+    display: none;
+  }
+}
+
+.mobile-villas {
+  display: none;
+
+  @media @phone {
+    display: block;
+  }
+}
+
 .villas {
   display: flex;
   position: absolute;
