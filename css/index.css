@@ -166,6 +166,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 400px) {
+  .navigation h1 {
+    padding-left: 15px;
+  }
+  .navigation .hamburger {
+    padding-right: 15px;
+  }
+}
 .overlay {
   background: #9da7b1;
   height: 100vh;
@@ -259,6 +267,13 @@ input {
   background: url('../img/home/home-jumbotron.png');
   background-size: cover;
 }
+@media (max-width: 400px) {
+  .jumbo-home {
+    background: url('../img/home/home-mobile-jumbotron.png');
+    height: 260px;
+    background-size: cover;
+  }
+}
 .jumbo-home .container {
   height: 100%;
   position: relative;
@@ -271,6 +286,15 @@ input {
   color: #FFFFFF;
   position: absolute;
   bottom: 58px;
+}
+@media (max-width: 400px) {
+  .jumbo-home h1 {
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 4.5rem;
+    bottom: 24px;
+    left: 15px;
+  }
 }
 .row1 {
   display: flex;

@@ -4,6 +4,12 @@
   background: url('../img/home/home-jumbotron.png');
   background-size: cover;
 
+  @media @phone {
+    background: url('../img/home/home-mobile-jumbotron.png');
+    height: 260px;
+    background-size: cover;
+  }
+
   .container {
     height: 100%;
     position: relative;
@@ -14,6 +20,14 @@
     .jumbo-text;
     position: absolute;
     bottom:58px;
+
+    @media @phone {
+      font-weight: 400;
+      font-size: 4.4rem;
+      line-height: 4.5rem;
+      bottom: 24px;
+      left: 15px;
+    }
   }
 }
 
