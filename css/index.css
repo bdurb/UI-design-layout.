@@ -212,11 +212,24 @@ body {
   background: #828282;
   color: #FFFFFF;
 }
+@media (max-width: 400px) {
+  .footer {
+    height: 700px;
+  }
+}
 .footer-container {
   height: 250px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 400px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+    align-content: center;
+  }
 }
 .footer-container h1 {
   font-size: 2rem;
@@ -276,6 +289,19 @@ input {
 @media (max-width: 400px) {
   .row1 .buttons {
     width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .home1 {
+    display: none;
+  }
+}
+.home1-mobile {
+  display: none;
+}
+@media (max-width: 400px) {
+  .home1-mobile {
+    display: flex;
   }
 }
 .col-md-6 {
