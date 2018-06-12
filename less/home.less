@@ -23,7 +23,7 @@
 
   @media @phone {
     flex-direction: column-reverse;
-    padding-bottom: 10px;
+    padding: 55px;
   }
 
   h1 {
@@ -40,10 +40,39 @@
     font-size: 1.6rem;
 
     @media @phone {
-      width: 100%;
+      width: 267px;
     }
   }
 }
+
+.row2 {
+  display: flex;
+  padding: 50px 0;
+
+  @media @phone {
+    flex-direction: column;
+    padding: 0 55px 55px 55px;
+  }
+
+  h1 {
+    .sub-headers;
+    padding-top: 50px;
+  }
+
+  .buttons {
+    width: 146px;
+    height: 47px;
+    background: @white;
+    color: black;
+    border: 1px solid black;
+    font-size: 1.6rem;
+
+    @media @phone {
+      width: 267px;
+    }
+  }
+}
+
 
 .home1 {
   @media @phone {
@@ -66,6 +95,11 @@
 .recent-projects {
   .sub-headers;
   padding: 50px 15px;
+
+  @media @phone {
+    margin-left: 54px;
+    padding-top: 0px;
+  }
 }
 
 .villas-image {
@@ -83,6 +117,7 @@
 
   @media @phone {
     display: block;
+    margin: 0 auto;
   }
 }
 
@@ -99,6 +134,12 @@
   justify-content: center;
   font-size: 2.4rem;
   letter-spacing: .8rem;
+
+  @media @phone {
+    right: 71px;
+    bottom: -75px;
+    width: 286px;
+  }
 }
 
 .centered-text {
@@ -106,6 +147,11 @@
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px;
+
+  @media @phone {
+    width: 286px;
+    padding-bottom: 50px;
+  }
 }
 
 .outskirts {
@@ -121,6 +167,12 @@
   justify-content: center;
   font-size: 2.4rem;
   letter-spacing: .8rem;
+
+  @media @phone {
+    left: 71px;
+    bottom: -75px;
+    width: 286px;
+  }
 }
 
 .col-md-5 {
