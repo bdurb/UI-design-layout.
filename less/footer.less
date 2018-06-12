@@ -6,6 +6,13 @@
   color: @white;
   @media @phone {
     height: 700px;
+    padding: 0 15px;
+  }
+}
+
+.col-md-2 {
+  @media @phone {
+    padding-left: 0;
   }
 }
 
@@ -18,12 +25,15 @@
       flex-direction: column;
       justify-content: space-between;
       height: 700px;
-      align-content: center;
     }
 
   h1 {
     font-size: 2rem;
     line-height: 2.4rem;
+
+    @media @phone {
+      padding-top: 25px;
+    }
   }
 
   p {

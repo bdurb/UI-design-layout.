@@ -215,6 +215,12 @@ body {
 @media (max-width: 400px) {
   .footer {
     height: 700px;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 400px) {
+  .col-md-2 {
+    padding-left: 0;
   }
 }
 .footer-container {
@@ -228,12 +234,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 700px;
-    align-content: center;
   }
 }
 .footer-container h1 {
   font-size: 2rem;
   line-height: 2.4rem;
+}
+@media (max-width: 400px) {
+  .footer-container h1 {
+    padding-top: 25px;
+  }
 }
 .footer-container p {
   font-size: 1.2rem;
