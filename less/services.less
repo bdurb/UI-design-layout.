@@ -4,6 +4,10 @@
   height: 248px;
   background: url('../img/services/services-jumbotron.png');
   background-size: cover;
+  @media @phone {
+    background:url('../img/services/services-mobile-jumbotron.png');
+    background-size: cover;
+  }
 
   .container {
     height: 100%;
@@ -16,12 +20,28 @@
     .jumbo-text;
     position: absolute;
     bottom: 17px;
+
+    @media @phone {
+      font-weight: 400;
+      font-size: 4.4rem;
+      line-height: 4.5rem;
+      bottom: 24px;
+      left: 15px;
+    }
   }
 }
 
 .services-text {
   margin: 50px 0;
   padding: 0;
+
+  @media @phone {
+    margin: 25px 15px;
+
+    p {
+      padding-right:25px;
+    }
+  }
 }
 .tabs {
   width: 100%;
@@ -94,5 +114,21 @@
   justify-content: space-between;
   margin: 0 auto;
 }
+
+.pre-const-desktop {
+  @media @phone {
+    display: none;
+  }
+}
+
+.pre-const-mobile {
+  display: none;
+  @media @phone {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+  }
+}
+
 
 

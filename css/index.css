@@ -156,6 +156,11 @@ body {
   opacity: .95;
   z-index: 20;
 }
+@media (max-width: 400px) {
+  .navigation {
+    width: 400px;
+  }
+}
 .navigation h1 {
   color: #FFFFFF;
   font-size: 2.4rem;
@@ -213,6 +218,7 @@ body {
 }
 .hamburger {
   cursor: pointer;
+  padding: 0;
 }
 .footer {
   width: 100%;
@@ -469,6 +475,12 @@ input {
   background: url('../img/services/services-jumbotron.png');
   background-size: cover;
 }
+@media (max-width: 400px) {
+  .jumbo-services {
+    background: url('../img/services/services-mobile-jumbotron.png');
+    background-size: cover;
+  }
+}
 .jumbo-services .container {
   height: 100%;
   position: relative;
@@ -482,9 +494,26 @@ input {
   position: absolute;
   bottom: 17px;
 }
+@media (max-width: 400px) {
+  .jumbo-services h1 {
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 4.5rem;
+    bottom: 24px;
+    left: 15px;
+  }
+}
 .services-text {
   margin: 50px 0;
   padding: 0;
+}
+@media (max-width: 400px) {
+  .services-text {
+    margin: 25px 15px;
+  }
+  .services-text p {
+    padding-right: 25px;
+  }
 }
 .tabs {
   width: 100%;
@@ -550,4 +579,19 @@ input {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .pre-const-desktop {
+    display: none;
+  }
+}
+.pre-const-mobile {
+  display: none;
+}
+@media (max-width: 400px) {
+  .pre-const-mobile {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+  }
 }
