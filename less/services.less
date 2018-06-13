@@ -39,7 +39,7 @@
 }
 }
 .tabs-link {
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   height: 50px;
   width: 100px;
@@ -48,10 +48,23 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   &:hover {
     background: @teal;
     cursor: pointer;
+    }
+    @media @phone {
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+
+
+.tabs-links {
+  @media @phone {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -62,11 +75,18 @@
 }
 
 .tabs-item-title {
-  padding: 0;
+  font-size: 2.4rem;
+  font-weight:  bold;
+  padding-left: 0;
+  padding-bottom: 15px;
 }
 
 .tabs-items {
   padding-bottom: 100px;
+
+  @media @phone {
+    margin: 0 15px;
+  }
 }
 
 .tabs-links {
@@ -74,3 +94,5 @@
   justify-content: space-between;
   margin: 0 auto;
 }
+
+
